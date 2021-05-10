@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run app"
+    "start": "npm run app",
   	"backend": " cd backend & nodemon & cd ..",
   	"frontend": "npm start --prefix frontend",
   	"app": "concurrently \"npm run frontend\" \"npm run backend\""  
