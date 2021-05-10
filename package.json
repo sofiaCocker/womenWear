@@ -1,0 +1,13 @@
+{
+  "name": "womenwear",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  	"backend": " cd backend & nodemon & cd ..",
+  	"frontend": "npm start --prefix frontend",
+  	"app": "concurrently \"npm run frontend\" \"npm run backend\""  
+  },
+  "author": "",
+  "license": "ISC"
+}
