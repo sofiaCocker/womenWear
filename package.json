@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run app",
-  	"backend": " cd backend & nodemon & cd ..",
+  	"backend": " cd backend & node server.js & cd ..",
   	"frontend": "npm start --prefix frontend",
   	"app": "npm run frontend & npm run backend"  
   },
