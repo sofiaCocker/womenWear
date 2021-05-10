@@ -1,0 +1,16 @@
+.article {
+	display: flex;
+	position: relative;
+}
+.descr {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+.slide {
+	width: 50vw;
+	height: 50vh;
+}
+.slide img {
+	width: 50vw;
+}

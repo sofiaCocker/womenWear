@@ -1,0 +1,12 @@
+* {
+	font-family: Georgia, serif;
+}
+.carousel-control-prev-icon {
+	background-color: gray;
+}
+.carousel-indicators li {
+	background-color: gray;
+}
+.carousel-control-next-icon {
+	background-color: gray;
+}
