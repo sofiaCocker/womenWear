@@ -4,11 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run app",
-  	"backend": " cd backend & node server.js & cd ..",
-  	"frontend": "npm start --prefix frontend",
-  	"app": "npm run frontend & npm run backend"  
+    "start": "npm i concurrently --save-dev & npm run app",
+    "backend": " cd backend & node server.js & cd ..",
+    "frontend": "npm start --prefix frontend",
+    "app": "concurrently \"npm run frontend\" \"npm run backend\" "
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^6.1.0"
+  }
 }
