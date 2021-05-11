@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm i concurrently --save-dev & npm run app",
+    "start": "npm run app",
     "backend": " cd backend & node server.js & cd ..",
     "frontend": "npm start --prefix frontend",
-    "app": "concurrently \"npm run frontend\" \"npm run backend\" "
+    "app": "concurrently \"npm run frontend\" \"npm run backend\" ",
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "author": "",
   "license": "ISC",
