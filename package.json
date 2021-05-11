@@ -12,7 +12,7 @@
     "backend": " cd backend & node server.js & cd ..",
     "frontend": "npm start --prefix frontend",
     "app": "concurrently \"npm run frontend\" \"npm run backend\" ",
-    "heroku-postbuild": "npm install && npm run start"
+    "heroku-postbuild": "npm install --prefix backend && npm install --prefix frontend  && npm run start"
   },
   "author": "",
   "license": "ISC",
