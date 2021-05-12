@@ -16,7 +16,7 @@
     "backend": " node backend/server",
     "frontend": "npm start --prefix frontend",
     "app": "concurrently \"npm run frontend\" \"npm run backend\" ",
-    "heroku-postbuild": "npm install & npm install --prefix backend && npm install --prefix frontend"
+    "heroku-postbuild": "npm install & npm install --prefix frontend && npm install --prefix backend"
   },
   "author": "",
   "license": "ISC",
