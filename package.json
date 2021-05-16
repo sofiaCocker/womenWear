@@ -12,11 +12,11 @@
     "node": "14.x"
   },
   "scripts": {
-    "start": "npm run app",
+    "start": "npm run backend",
     "backend": " node backend/server",
     "frontend": "npm start --prefix frontend",
     "app": "concurrently \"npm run frontend\" \"npm run backend\" ",
-    "heroku-postbuild": "npm install & npm i --prefix frontend & npm i --prefix backend"
+    "heroku-postbuild": "npm install & npm i --prefix backend"
   },
   "author": "",
   "license": "ISC",
